@@ -1,0 +1,517 @@
+.mainCont.dark{
+  background: #141D2F;
+}
+.devfinderLogo.dark{
+  color: #FFF;
+}
+.themeIconTxt.dark{
+  color: #FFF;
+}
+.themeButton.dark:hover{
+  cursor: pointer;
+  filter: none;
+}
+.themeButton.dark:hover>#themeIconTxt{
+  color: #90A4D4;
+}
+.themeButton.dark:hover>#themeIcon{
+  content: url('./assets/icon-sun-hover.svg');
+}
+.searchBar.dark{
+  background: #1E2A47;
+}
+.searchBar.dark>#userInput{
+  color: #FFF;
+  background: #1E2A47;
+}
+.searchBar.dark>#userInput::placeholder{
+  color: #FFF;
+}
+.maisy.dark{
+  background: #1E2A47;
+}
+
+
+#root,body,html{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.root.dark{
+  background: #141D2F;
+}
+.mainCont{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F6F8FF;
+}
+.mainCont.dark{
+  background: #141D2F;
+}
+.centralCont{
+  width: 730px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.themeToggle{
+  width: 730px;
+  display: flex;
+  justify-content: space-between;
+}
+.devfinderLogo{
+  color: #222731;
+  font-family: "Space Mono";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.themeButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.themeButton:hover{
+  cursor: pointer;
+  filter: brightness(50%);
+}
+.themeIconTxt{
+  color: #697C9A;
+  text-align: right;
+  font-family: "Space Mono";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.5px;
+}
+.searchBar{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 730px;
+  height: 69px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #FEFEFE;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+}
+#userInput{
+  outline: none;
+  border: none;
+  width: 500px;
+  height: 69px;
+  flex-shrink: 0;
+  color: #222731;
+  font-family: "Space Mono";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 138.889% */
+}
+#userInput::placeholder{
+  color: #4B6A9B;
+  font-family: "Space Mono";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 138.889% */
+}
+#errorMsg{
+  position: absolute;
+  right: 10rem;
+  color: #F74646;
+  font-family: "Space Mono";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#userInputButton{
+  border: none;
+  width: 106px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #0079FF;
+  color: #FFF;
+  font-family: "Space Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#userInputButton:hover{
+  cursor: pointer;
+  border-radius: 10px;
+  background: #60ABFF;
+  border-color: #60ABFF;
+}
+.maisy{
+  display: flex;
+  justify-content: left;
+  width: 730px;
+  height: 444px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #FEFEFE;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+}
+.pfp{
+  margin: 1rem 0 0 1rem;
+  width: 117px;
+  height: 117px;
+  flex-shrink: 0;
+  border-radius: 117px;
+  background-color: green;
+}
+.profileInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 1rem 0 1rem;
+}
+.basicInfo{
+  display: flex;
+  flex-direction: column;
+}
+.namedate{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.name{
+  color: #2B3442;
+  font-family: "Space Mono";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.date{
+  color: #697C9A;
+  text-align: right;
+  font-family: "Space Mono";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.tag{
+  color: #0079FF;
+  font-family: "Space Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.description{
+  color: #4B6A9B;
+  font-family: "Space Mono";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 166.667% */
+}
+.repoInfo{
+  display: flex;
+  align-self: center;
+  align-items: center;
+  gap: 100px;
+  padding-left: 32px;
+  width: 448px;
+  height: 85px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #F6F8FF;
+}
+.dataCaption{
+  color: #4B6A9B;
+  font-family: "Space Mono";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.num{
+  color: #2B3442;
+  font-family: "Space Mono";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.mediaInfo{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.media{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #4B6A9B;
+  font-family: "Space Mono";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#user-website:hover{
+  text-decoration: underline;
+}
+.repoInfo.dark{
+  background-color: #141D2F;
+}
+.name.dark,.date.dark,.dataCaption.dark,.num.dark,.mediaText.dark{
+  color: #fff;
+}
+.icon.dark{
+  filter: brightness(0%) invert(100%) hue-rotate(90deg);
+}
+#creation-date-tablet{
+  display: none;
+  text-align: left;
+  color: #697C9A;
+  font-family: "Space Mono";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#description-tablet{
+  display: none;
+}
+#pfp-tablet{
+  display: none;
+}
+
+@media screen and (max-width:1024px) {
+  #root{
+    height: 100%;
+  }
+  .centralCont{
+    width: 573px;
+  }
+  .themeToggle{
+    width: 573px;
+  }
+  .searchBar{
+    width: 573px;
+  }
+  #userInput{
+    outline: none;
+    border: none;
+    width: 400px;
+    height: 69px;
+    flex-shrink: 0;
+    color: #222731;
+    font-family: "Space Mono";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 138.889% */
+  }
+  #userInput::placeholder{
+    color: #4B6A9B;
+    font-family: "Space Mono";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 138.889% */
+  }
+  .centralCont{
+    height: 100%;
+  }
+  .maisy{
+    width: 573px;
+  }
+  .profileInfoTablet{
+    display: flex;
+    gap: 1rem;
+  }
+  .pfp{
+    display: none;
+    width: 117px;
+    height: 117px;
+    flex-shrink: 0;
+    border-radius: 117px;
+  }
+  #pfp-tablet{
+    display: block;
+  }
+  .name{
+    color: #2B3442;
+    font-family: "Space Mono";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+  }
+  .tag{
+    color: #0079FF;
+    font-family: "Space Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+  }
+  #creation-date{
+    display: none;
+  }
+  #creation-date-tablet{
+    display: flex;
+  }
+  #description{
+    display: none;
+  }
+  #description-tablet{
+    display: block;
+    width: 493px;
+    align-self: center;
+  }
+  .repoInfo{
+    width: 493px;
+  }
+  .mediaInfo{
+    width: 493px;
+    align-self: center;
+  }
+}
+@media screen and (max-width: 720px) {
+  .root,#root{
+    overflow-y: scroll;
+  }
+  .themeToggle{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 121px;
+  }
+  .devfinderLogo{
+    margin: 0;
+    color: #222731;
+    font-family: "Space Mono";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .searchBar{
+    width: 327px;
+    height: 60px;
+    flex-shrink: 0;
+  }
+  #userInput{
+    width: 200px;
+    height: 50px;
+    font-size: 13px;
+  }
+  #userInput::placeholder{
+    color: #4B6A9B;
+    font-family: "Space Mono";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 192.308% */
+  }
+  #userInputButton{
+    width: 84px;
+    height: 46px;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: "Space Mono";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  #errorMsg{
+    right: 6rem;
+  }
+  .maisy{
+    width: 327px;
+    height: 517px;
+    flex-shrink: 0;
+  }
+  .pfp{
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+  }
+  .profileInfo{
+    margin: 0;
+  }
+  .name{
+    color: #2B3442;
+    font-family: "Space Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .tag{
+    margin: 0;
+    color: #0079FF;
+    font-family: "Space Mono";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .date{
+    margin: 0;
+    color: #697C9A;
+    font-family: "Space Mono";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .mediaInfo{
+    display: flex;
+    flex-direction: column;
+  }
+  #description-tablet{
+    width: 279px;
+    color: #4B6A9B;
+    font-family: "Space Mono";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 192.308% */
+  }
+  .repoInfo{
+    width: 279px;
+    height: 85px;
+    flex-shrink: 0;
+    padding: 0;
+    gap: 0;
+    text-align: center;
+    justify-content: space-around;
+  }
+  .mediaInfo{
+    width: 279px;
+  }
+  .media{
+    height: 45.2px;
+    color: #4B6A9B;
+    font-family: "Space Mono";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
